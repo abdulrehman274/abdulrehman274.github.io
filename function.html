@@ -1,24 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.container{
+			
+			width:200px;
+			padding:10px;
+			align-content: left;
+		}
+		.subcon2{
+			width:100%;
+			
+		}
+		.con1{
+			border:2px solid black;
+			width:100%;
+			height:30px;
+		}
+		
+	</style>
+	<script>
+		function sum(){
+			let a = document.getElementById('firstdigit').value;
+			let b = document.getElementById('seconddigit').value;
+			let addition = parseInt(a)+parseInt(b);
+			document.getElementById("sum").innerHTML= addition;
+		}
+		function sub(){
+			let a = document.getElementById('firstdigit').value;
+			let b = document.getElementById('seconddigit').value;
+			let addition = parseInt(a)-parseInt(b);
+			document.getElementById("sum").innerHTML= addition;
+		}
+		function multi(){
+			let a = document.getElementById('firstdigit').value;
+			let b = document.getElementById('seconddigit').value;
+			let addition = parseInt(a)*parseInt(b);
+			document.getElementById("sum").innerHTML= addition;
+		}
+		function divi(){
+			let a = document.getElementById('firstdigit').value;
+			let b = document.getElementById('seconddigit').value;
+			let addition = parseInt(a)/parseInt(b);
+			document.getElementById("sum").innerHTML= addition;
+		}
+		
+	</script>
 </head>
 <body>
-    <h1>test</h1>
-    <p>This is my new para.</p>
-    <p>how are you</p>
-    <p>what is this</p>
-    <p>
-        <h2>
-            <h1></h1>
-            <h1></h1>
-            <h1></h1>
-            <h1></h1>
-            <h1></h1>
-        </h2>
-    </p>
-</body>
+<input type="text" id="firstdigit">
+<input type="text" id="seconddigit">
+<br>
+<div class="container">
+	<div>
+		<button class="subcon2"; onclick="sum()">+</button>
+	<div>
+	<div>
+		<button class="subcon2";  onclick="sub()">-</button>
+	</body>
+	<div class="subcon">
+		<button class="subcon2"; onclick="multi()">*</button>
+	</body>
+	<div>
+		<button class="subcon2";  onclick="divi()">/</button>
+	</body>
+	</div>
+<p class="con1" id="sum"></p>
+
+
 </html>
